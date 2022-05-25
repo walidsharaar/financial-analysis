@@ -3,7 +3,7 @@ import yfinance as yf
 import matplotlib.pyplot as plt
 
 
-stock = ["AAPL","XPEV"]
+stock = ["GOOGL","AMZN","TSLA"]
 stocks= yf.download(stock, start ="2020-25-05" ,end="2022-26-05" )
 data = stocks.loc[:,"close"].copy()
 
