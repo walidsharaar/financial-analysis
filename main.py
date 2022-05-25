@@ -17,8 +17,12 @@ data.head()
 #  get value of first row
 data.iloc[0]
 
+# percentage of change
+data.pct_change()
 
-
+# remove the null values
+com = data.pct_change().dropna()
+com.describe()
 
 # check the frequency of google stock as a sample
 
@@ -29,7 +33,7 @@ ret.plot(kind="hist",figsize=(12,8),bins=100)
 plot.show()
 
 
-# Stock Ris Analysis
+# Stock Risk Analysis
 
 sum.plot.scatter(x="std",y="mean",figsiz=(12,8), s=50, fontsize=15)
 for i in sum.index:
